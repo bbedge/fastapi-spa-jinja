@@ -1,0 +1,17 @@
+# local env files
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.DS_Store
+.idea
+.vscode
+venv
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.db
+*.sqlite

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="static/css/default.css" rel="stylesheet">
+    <link href="static/css/w3.css" rel="stylesheet">
+    <link href="static/css/all.min.css" rel="stylesheet">
+</head>
+<body class="w3-container w3-margin-top w3-light-grey">
+
+    <div class="w3-container w3-padding-32" style="max-width: 1000px; margin: auto;">
+        <h1 class="w3-text-indigo"><i class="fas fa-boxes"></i> Управление товарами</h1>
+
+        <!-- Форма для создания/редактирования -->
+        <div id="form" class="w3-card-4 w3-white w3-padding w3-margin-bottom">
+            <h2 id="form-title" class="w3-text-grey"><i class="fas fa-plus-circle"></i> Добавить товар</h2>
+            <div class="w3-row w3-margin-bottom">
+                <div class="w3-half w3-padding-small">
+                    <label class="w3-label"><i class="fas fa-tag"></i> Название:</label>
+                    <input type="text" id="name" class="w3-input w3-border" placeholder="Введите название">
+                </div>
+                <div class="w3-half w3-padding-small">
+                    <label class="w3-label"><i class="fas fa-ruble-sign"></i> Цена:</label>
+                    <input type="number" id="price" step="0.01" class="w3-input w3-border" placeholder="Введите цену">
+                </div>
+            </div>
+            <div class="w3-bar">
+                <button id="submit-btn" class="w3-button w3-blue w3-round-large"><i class="fas fa-save"></i> Добавить</button>
+                <button id="cancel-btn" class="w3-button w3-gray w3-round-large" style="display: none;"><i class="fas fa-times"></i> Отмена</button>
+            </div>
+        </div>
+
+        <!-- Таблица товаров -->
+        <h2 class="w3-text-teal"><i class="fas fa-list"></i> Список товаров</h2>
+        <div class="w3-responsive">
+            <table class="w3-table-all">
+                <thead>
+                    <tr class="w3-indigo">
+                        <th>ID</th>
+                        <th>Название</th>
+                        <th>Цена</th>
+                        <th style="text-align: center">Действия</th>
+                    </tr>
+                </thead>
+                <tbody id="items-list">
+                    <tr><td colspan="4" class="w3-center">Загрузка...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Сообщения -->
+    <div id="message_toast" class="w3-panel w3-card w3-indigo w3-display-bottommiddle w3-animate-bottom"
+         style="display:none; position:fixed; z-index:100; padding:16px;">
+    </div>
+
+<script src="static/js/default.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.action-buttons button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.action-buttons button:hover {
+  background-color: #f1f1f1;
+}
+.edit-btn {
+  color: #2196f3;
+}
+.delete-btn {
+  color: #f44336;
+}
+/* Выравнивание заголовков */
+th:nth-child(1), th:nth-child(2), th:nth-child(3) {
+  text-align: center;
+}
+th:nth-child(4) {
+  text-align: right;
+}
+/* Выравнивание ячеек */
+td:nth-child(1), td:nth-child(2), td:nth-child(3) {
+  text-align: center;
+}
+td:nth-child(4) {
+  text-align: right;
+}
